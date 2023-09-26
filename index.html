@@ -1,174 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
 
-<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Assistant Professor, USC">
+    <meta name="author" content="Renyuan Xu">5
+    <meta name="theme-color" content="#222222">
 
-    <meta name="description" content="This is the Web page for Renyuan Xu, Hooke Research Fellow in Math Institute at Oxford University.">
-    <meta name="author" content="Renyuan Xu">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/favicon-16x16.png">
 
-    <!-- This title will show up at the top of the browser window, not in the Web page itself -->
-    <title>Renyuan Xu, USC</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style-3.css">
 
-    <!-- favicons: these show at the top of your browser tab, etc. Visit http://www.favicon-generator.org/ to generate your own favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- This is the jQuery plugin (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- These are the includes for Bootstrap CSS and JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- This is the include for the Academicons fonts -->
-    <link rel="stylesheet" href="css/academicons.min.css"/>
-
-    <!-- This is the include for the FontAwesome fonts -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- This is the include for your own personal style sheet -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- favicons  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons//favicon-16x16.png">
-
-
-</head>
-
-<body>
-
-   <!-- Fixed navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-           <h1 id="brand-name"><a class="navbar-brand" href="index.html">Renyuan Xu</a></h1>
-         </div>
-         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li id="about" class="active"><a href="index.html">About Me</a></li>
-                <li id="research"><a href="research.html">Research</a></li>
-              <li id="teaching"><a href="teaching.html">Teaching</a></li>
+    <title>Renyuan Xu</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container pt-5 allstuffp">
+        <div class="row pt-5 allstuff">
+            <div class="col-md-4 pt-5">
+                <div class="fixed-posi">
+                <p class="name">Renyuan Xu</p>
+                <img src="images/renyuan3.png" class="profilepic pt-4 pb-4">
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/renyuan_cv.pdf">curriculum vitae</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=v930A-YAAAAJ&hl=en&oi=ao">google scholar</a></div>
+                 <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/renyuan-xu-b8073276/">linkedin</a></div>
 
 
 
-            </ul>
-         </div><!--/.nav-collapse -->
-        </div>
-      </nav>
+                <!-- <div class="pt-5">usercontext</div> -->
+                <!-- <div class="">travel history</div> -->
+                <!-- <div class="">this template</div> -->
+                </div>
+            </div>
+            <div class="col-md-8 pt-5 about">
+I am currently a WiSE Gabilan Assistant Professor in the <a class="in-text" href="https://ise.usc.edu/"
+                     target="_blank">Daniel J. Epstein Department of Industrial and Systems Engineering</a>
+at the University of Southern California.
+From 2019-2021 I was a Hooke Research Fellow in the <a class="in-text" href="https://www.maths.ox.ac.uk/"
+                     target="_blank">Mathematical Institute</a> at the University of Oxford,
+              and before that I completed my Ph.D. in 2019 at the University of California, Berkeley
+              in the <a class="in-text" href="https://ieor.berkeley.edu/"
+                     target="_blank">Department of Industrial Engineering and Operations Research</a>. <br> <br>
 
 
-    <div class="container main-content">
-      <div class="row">
-         <div class="col-md-12">
-         <h2 class="page-header">About Me</h2>
-         </div>
-      </div> <!-- row -->
-        <div class="row">
-            <div class="col-md-5" style="margin-top: 50px">
-                <p></p><img class="thumbnail" src="img/portrait.jpeg" alt="" height="441" width="295">
-                <table id="address" class="table">
-                    <tbody>
-                        <tr>
-                            <td style="width:45px"><i class="fa fa-home fa-lg" aria-hidden="true"></i></td>
-                            <td>310K Olin Hall of Engineering<br/> 
-University of Southern California<br/> Los Angeles, CA, 90089
-                            </td>
-                        </tr>
+              My research interests include stochastic analysis, stochastic controls and games, machine learning theory, and mathematical finance. I am also
+              interested in interdisciplinary topics that combine methodologies in multiple fields such as applied probability, statistics, and optimization.
+              Some of the topics that I have been working on recently:
+<ul>
+  <li> Stochastic games and mean-field games with applications in finance</li>
+ <li>Deep learning theory through the lens of stochastic differential equations</li>
+  <li>Reinforcement learning theory and data-driven decision making</li>
+  <li>Stochastic controls under partial observations and dynamic information acquisition</li>
+  <li> Principal-agent problems (mechanism design) under heterogeneous information structures</li>
+</ul>
 
-                        <tr>
-                            <td><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></td>
-                            <td><a href="renyuanx@usc.edu">renyuanx@usc.edu</a></td>
-                        </tr>
+              <br> <br>
 
-                    </tbody>
-                </table>
+Please find my cv <a class="in-text" href="assets/renyuan_cv.pdf" target="_blank">here</a>. <br>
 
+Office: Olin Hall of Engineering 310K<br>
+Email: renyuanx (at) usc (dot) edu<br> <br>
+
+                 <p class="header pt-5">Jounal Publications</p>
+
+<div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Recent Advances in Reinforcement Learning in Finance
+
+</span><br>
+                    with  Ben Hambly and Huining Yang (2021)
+                    <br>
+              Mathematical Finance (2023)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2112.04553.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mafi.12382.pdf" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+<div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Policy Gradient Methods Find the Nash Equilibrium in N-player General-sum Linear-quadratic Games
+
+</span><br>
+                    with  Ben Hambly and Huining Yang (2021)
+                    <br>
+                Journal of Machine Learning Research (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2107.13090.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.jmlr.org/papers/volume24/21-0842/21-0842.pdf" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Modelling COVID-19 Contagion: Risk Assessment and Targeted Mitigation Policies
+</span><br>
+                    with  Rama Cont and Artur Kotlicki (2020)
+                    <br>
+                Royal Society Open Science (2021)
+                    <br>
+                     <a class="tag" href="https://www.medrxiv.org/content/10.1101/2020.08.26.20182477v2" target="_blank">medRxiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://royalsocietypublishing.org/doi/10.1098/rsos.201535" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Interbank Lending with Benchmark Rates: Pareto Optima for a Class of Singular Control Games
+</span><br>
+                    with Xin Guo and Rama Cont (2020)
+                    <br>
+                  Mathematical Finance (2021)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2005.05766.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mafi.12325?casa_token=SCHVMu0zJDgAAAAA:Hs5mdOsD4n84IFH69-xCJYL9YI9pLp8P-RZkncCD7Ml7SZ08JCk6-zhEDjd7SXikUJtjxPHBBBvqsg" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Policy Gradient Methods for the Noisy Linear Quadratic Regulator over a Finite Horizon
+</span><br>
+                    with Ben Hambly and Huining Yang (2020)
+                    <br>
+                   SIAM Journal on Control and Optimization (2021)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2010.00145.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1382386" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Entropy Regularization for Mean Field Games with Learning</span><br>
+                    with Xin Guo and Thaleia Zariphopoulou (2020)
+                    <br>
+                   Mathematics of Operations Research (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2010.00145.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2021.1238?journalCode=moor" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Mean-Field Controls with Q-learning for Cooperative MARL: Convergence and Complexity Analysis
+</span><br>
+                    with Xin Guo, Haotian Gu and Xiaoli Wei (2020)
+                    <br>
+                    SIAM Journal on Mathematics of Data Science (2021)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2002.04131.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1360700" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+  <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">A General Framework for Learning Mean-Field Games</span><br>
+                    with Xin Guo, Anran Hu and Junzi Zhang (2020)
+                    <br>
+                    Mathematics of Operations Research (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/abs/2003.06069" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2022.1274" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+   <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Delay-Adaptive Learning in Generalized Linear Contextual Bandits</span><br>
+                    with Jose Blanchet and Zhengyuan Zhou (2020)
+                    <br>
+                    Mathematics of Operations Research (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/2003.05174.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2023.1358?journalCode=moor" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+               <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Dynamic Programming Principles for Mean-Field Controls with Learning</span><br>
+                    with Xin Guo, Haotian Gu and Xiaoli Wei (2019)
+                    <br>
+                    Operations Research (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/1911.07314.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.2395" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+
+     <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Transaction Cost Data Analytics for Corporate Bonds</span><br>
+                    with Xin Guo and Charles-Albert Lehalle (2019)
+                    <br>
+                    Quantitative Finance (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/1903.09140.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.tandfonline.com/doi/pdf/10.1080/14697688.2022.2054723" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+        <div class="py-2">
+
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">A Class of Stochastic Games and Moving Free Boundary Problems</span><br>
+                    with Xin Guo and Wenpin Tang (2018)
+                    <br>
+                    SIAM Journal on Control and Optimization (2022)
+                    <br>
+                     <a class="tag" href="https://arxiv.org/pdf/1809.03459.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1322558" target="_blank">DOI</a>
+                 </p>
+
+                 </div>
+
+
+              <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Stochastic Games for Fuel Followers Problem: N versus MFG</span><br>
+                    with Xin Guo (2018)
+                    <br>
+                    SIAM Journal on Control and Optimization (2019)
+                    <br>
+
+
+                     <a class="tag" href="https://arxiv.org/pdf/1803.02925.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://epubs.siam.org/doi/abs/10.1137/17M1159531" target="_blank">DOI</a>
+                 </p>
+                 </div>
+
+   <p class="header pt-5">Conference Preceedings</p>
+
+              <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Risk-Aware Linear Bandits with Application in Smart Order Routing</span><br>
+                     with Jingwei Ji and Ruihao Zhu (2022)<br>
+                     <span class="conf"><a class="confshort" href="https://icml.cc/Conferences/2021">ICAIF'22</a> | ACM International Conference on AI in Finance</span><br>
+
+
+                   <a class="tag" href="https://dl.acm.org/doi/abs/10.1145/3533271.3561692" target="_blank">proceeding</a>
+                 </p>
+                    </div>
+
+<div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Scaling Properties of Deep Residual Networks</span><br>
+                     with Alain–Sam Cohen, Rama Cont, and Alain Rossier (2021)<br>
+                     <span class="conf"><a class="confshort" href="https://icml.cc/Conferences/2021">ICML'21</a> | International Conference on Machine Learning</span><br>
+
+                     <a class="tag" href="https://arxiv.org/pdf/2105.12245.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                   <a class="tag" href="http://proceedings.mlr.press/v139/cohen21b/cohen21b.pdf" target="_blank">proceeding</a>
+                 </p>
+                    </div>
+
+
+   <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Learning in Generalized
+Linear Contextual Bandits with Stochastic Delays</span><br>
+                     with Jose Blanchet and Zhengyuan Zhou (2019)<br>
+                     <span class="conf"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS'19 (Spotlight)</a> | Conference on Neural Information Processing Systems</span><br>
+
+
+                   <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/56cb94cb34617aeadff1e79b53f38354-Paper.pdf" target="_blank">proceeding</a>
+                 </p>
+                    </div>
+
+
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Learning Mean-Field Games</span><br>
+                     with Xin Guo, Anran Hu and Junzi Zhang (2019)<br>
+                     <span class="conf"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS'19</a> | Conference on Neural Information Processing Systems</span><br>
+
+                     <a class="tag" href="https://arxiv.org/pdf/1901.09585.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+                   <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/030e65da2b1c944090548d36b244b28d-Paper.pdf" target="_blank">proceeding</a>
+                 </p>
+                    </div>
+
+
+
+<p class="header pt-5">Working Papers and Preprints</p>
+
+              <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Mean-Field Multi-Agent Reinforcement
+Learning: A Decentralized Network Approach</span><br>
+                    with Xin Guo, Haotian Gu and Xiaoli Wei (2021)
+                    <br>
+                    Minor Revision, Mathematics of Operations Research
+                   <span class="tagsep">|</span>
+  <a class="tag" href="https://arxiv.org/pdf/2108.02731.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+ <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">TailGAN: Nonparametric Scenario
+Generation for Tail Risk Estimation</span><br>
+                    with Rama Cont, Mihai Cucuringu and Chao Zhang (2022)
+                    <br>
+                    R & R, Management Science
+                   <span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2203.01664" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+              <div class="py-2">
+                <p class="paper my-2 pl-2">
+                     <span class="papertitle">Policy Gradient Finds Global Optimum of
+Nearly Linear-quadratic Control Systems</span><br>
+                    with Yinbin Han amd Meisam Razaviyayn (2022)
+                    <br>
+                    Major Revision, SIAM Journal on Control and Optimization<span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2303.08431" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+              <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Asymptotic Analysis of Deep
+Residual Networks</span><br>
+                    with Rama Cont and Alain Rossier (2022)
+                    <br>
+                   Submitted <span class="tagsep">|</span>
+
+  <a class="tag" href="https://arxiv.org/pdf/2212.08199.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+
+
+<div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Implicit Regularization and Convergence of
+Gradient Descent for Deep Residual Networks</span><br>
+                    with Rama Cont and Alain Rossier (2022)
+                    <br>
+                   Submitted <span class="tagsep">|</span>
+
+  <a class="tag" href="https://arxiv.org/pdf/2204.07261.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+              <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle"> Linear-quadratic Gaussian Games with Asymmetric Information: Belief Corrections Using the Opponents Actions</span><br>
+                    with Huining Yang and Ben Hambly (2023)
+                    <br>
+                   Submitted <span class="tagsep">|</span>
+
+  <a class="tag" href="https://arxiv.org/pdf/2307.15842.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+
+<div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle"> Model-free Analysis of Dynamic Trading Strategies</span><br>
+                    with Rama Cont and Anna Ananova (2023)
+                    <br>
+                   Submitted <span class="tagsep">|</span>
+
+  <a class="tag" href="https://arxiv.org/pdf/2011.02870.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
+
+                 </p>
+                 </div>
+
+
+
+                <p class="header pt-5">Ph.D. Students</p>
+              I am very fortunate to advise and work with the following Ph.D. students:
+              <ul>
+
+  <li>  <a class="in-text" href="https://yinbinhan.github.io/"
+                     target="_blank">Yinbin Han</a> (2021 - ), co-advised with <a class="in-text" href="https://sites.usc.edu/razaviyayn/"
+                     target="_blank">Meisam Razaviyayn</a>
+ </li>
+                <li>  <a class="in-text" href="https://scholar.google.com/citations?user=WwrJrqgAAAAJ&hl=en"
+                     target="_blank">Jingwei Ji</a>  (2021 - )</li>
+<li> Zhengqi Wu (2021 - )</li>
+</ul>
+   <p class="header pt-5">Recognitions and Awards</p>
+<ul>
+                <li>SIAM Financial Mathematics and Engineering Early Career Prize, 2023</li>
+  <li> JP Morgan AI Research Faculty Award, 2022</li>
+   <li> WiSE Gabilan Assistant Professorship, USC,  2021</li>
+     <li> Research Recognition Award, University of Oxford,  2020</li>
+  <li> Finalist, INFORMS Applied Probability Society Best Paper Competition, 2018</li>
+</ul>
+
+   <p class="header pt-5">Teaching</p>
+I am teaching the following courses at USC:
+               <ul>
+                <li> ISE537 (Master level): Financial Analytics (Machine Learning in Finance), Fall 2021/2022/2023</li>
+  <li> ISE599 (Ph.D. level): Special Topics in Control Theory and Reinforcement Learning, Fall 2022</li>
+</ul>
+     I was the tutor for the following courses at the University of Oxford:
+               <ul>
+                <li>Stochastic Control, Hilary Term 2020</li>
+  <li> Machine Learning, Hilary Term 2020</li>
+                 <li> Market Microstructure and Algorithmic Trading, Hilary Term 2020</li>
+                 <li> Statistics and Financial Data Analysis, Michaelmas Term 2019</li>
+</ul>
+
+              <div class="row text-center py-4">
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/berkeley.png">
+                        <div class="institution">Berkeley</div>
+                        <div class="years">2014 - 2019</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/oxford.png">
+                        <div class="institution">Oxford</div>
+                        <div class="years">2019-2021</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/usc.png">
+                        <div class="institution">USC</div>
+                        <div class="years">2021 - </div>
+                    </div>
+
+
+
+
+                </div>
 
             </div>
-            <div class="col-md-7" style="margin-top: 100px">
-              <p><font size="4.5">I am currently a WiSE Gabilan Assistant Professor in the <a href="https://ise.usc.edu/">Epstein Department of Industrial and Systems Engineering</a> at the <a href="https://www.usc.edu/">University of Southern California</a>. 
-                  Before joining USC, I spent two years as a Hooke Research Fellow in the <a href="https://www.maths.ox.ac.uk/">Mathematical Institute</a> at the University of Oxford mentored by Professor <a href="http://rama.cont.perso.math.cnrs.fr/">Rama Cont</a>. I completed my Ph.D. in <a href="http://ieor.berkeley.edu/">IEOR Department</a> at UC Berkeley under the supervision of Professor <a href="http://www.ieor.berkeley.edu/~xinguo/">Xin Guo</a> in 2019. I received my Bachelor’s degree in Mathematics from the University of Science and Technology of China in 2014.   <font size="4.5">Please find my <a href="./resources/cv-renyuan-xu-09082023.pdf">CV</a> here.
 
-                      My research interests include stochastic analysis, mathematical finance, game theory, and machine learning theory.
-          
-             </div>
-            </div>
-</div>
-        
         </div>
-        <!-- .row -->
-
     </div>
-    <!-- .container -->
 
-    <footer class="container">
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-8">
-                <p class="pull-left spacer-top" >&copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Renyuan Xu</p>
-            </div>
-
-            <!-- academic icons: For more icons, please see https://jpswalsh.github.io/academicons/ -->
-            <div class="col-xs-12 col-sm-3 social-icons pull-right">
-
-
-               <!-- Visit Researchgate.net to set up an account -->
-               <a class="btn btn-primary btn-lg" href="https://www.researchgate.net/profile/Renyuan_Xu"><i class="ai ai-researchgate" title="Research Gate"></i></a>
-
-               <!-- Visit LinkedIn.net to set up an account  -->
-               <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/renyuan-xu-b8073276/"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
-
-
-            </div>
-
-        </div>
-        <!-- .row -->
-   </footer>
-
-
-   <!-- This in the include to style code, if you put a code snippet into your website, for instructions, see: https://github.com/google/code-prettify -->
-   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/style-3.js"></script>
 </body>
-
+  <style>
+  </style>
 </html>
