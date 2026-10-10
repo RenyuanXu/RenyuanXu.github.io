@@ -1,903 +1,496 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Assistant Professor, USC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Renyuan Xu is an assistant professor of Management Science and Engineering at Stanford University. Research in mathematical finance, stochastic control, games, and machine learning theory.">
     <meta name="author" content="Renyuan Xu">
-    <meta name="theme-color" content="#222222">
-
+    <meta name="theme-color" content="#8c1515">
+    <link rel="canonical" href="https://renyuanxu.github.io/">
     <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/ms-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/ms-icon-144x144.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style-2.css">
-
-    <title>Renyuan Xu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;display=swap">
+    <style>
+/* All page sections stay in normal document flow, including the profile. */
+:root {
+  color-scheme: light;
+  --text: #202124;
+  --profile-heading-size: 34px;
+  --muted: #45474b;
+  --accent: #8c1515;
+  --line: #e3e3e0;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 24px; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
+p { margin: 0 0 20px; }
+ul { padding-left: 22px; margin: 16px 0 24px; }
+li { padding-left: 3px; margin: 6px 0; }
+img { display: block; max-width: 100%; }
+h1, h2, h3 { color: #171819; font-weight: 600; line-height: 1.35; }
+h1 { margin: 0 0 7px; font-size: var(--profile-heading-size); letter-spacing: -1px; }
+h2 { margin: 0 0 26px; font-size: 26px; letter-spacing: -.5px; }
+h3 { margin: 0 0 7px; font-size: 17px; letter-spacing: -.1px; }
+.page { max-width: 1176px; margin: 0 auto; padding: 66px 38px 32px; }
+.intro { display: grid; grid-template-columns: 252px minmax(0, 1fr); gap: 72px; align-items: start; margin-bottom: 32px; }
+.profile { position: static; }
+.role { color: var(--muted); font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+.portrait { width: 200px; height: 300px; object-fit: cover; border-radius: 5px; }
+.profile-links { display: grid; gap: 7px; margin: 24px 0 0; }
+.profile-links a { width: fit-content; font-weight: 500; font-size: 15px; }
+.profile-email { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; margin: 0; font-size: 14px; overflow-wrap: anywhere; }
+.email-label { color: var(--accent); font-size: 15px; font-weight: 500; }
+.about-heading { color: var(--accent); font-size: var(--profile-heading-size); letter-spacing: -1px; margin: 0 0 20px; }
+.bio p:last-of-type { margin-bottom: 12px; }
+.research-topics { margin-top: 8px; margin-bottom: 0; }
+.research-topics li { margin: 3px 0; }
+.section-nav { display: flex; flex-wrap: wrap; gap: 10px 27px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section-nav a { color: var(--text); font-size: 17px; font-weight: 600; }
+.section-nav a:hover { color: var(--accent); }
+.content-section { padding-top: 48px; }
+.activities { margin-top: 8px; }
+.activities ul { margin: 0; }
+.activities li { margin: 0 0 14px; }
+.paper { padding: 15px 0; border-bottom: 1px solid var(--line); }
+.paper:first-of-type { padding-top: 0; }
+.paper:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.paper p { margin: 3px 0; font-size: 15px; line-height: 1.6; }
+.paper-authors, .paper-meta { color: var(--muted); }
+.tag, .confshort { font-weight: 500; }
+.tagsep { display: inline-block; margin: 0 7px; color: #747474; }
+.people-list, .award-list { margin-bottom: 0; }
+.people-list li, .award-list li { margin-bottom: 12px; }
+.teaching-group { margin: 24px 0 30px; }
+.teaching-group h3 { font-size: 16px; }
+.teaching-group ul { margin: 10px 0 0; }
+.academic-path { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; margin-top: 52px; padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; }
+.academic-path img { height: 48px; width: auto; max-width: 70px; object-fit: contain; margin: 0 auto 12px; }
+.institution { font-size: 13px; font-weight: 600; }
+.years { color: var(--muted); font-size: 12px; }
+.page-footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 24px; font-size: 13px; color: var(--muted); }
+.skip-link { position: absolute; left: 20px; top: -100px; padding: 10px 16px; background: #fff; border: 1px solid var(--accent); z-index: 2; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 900px) {
+  .page { padding: 44px 28px 28px; }
+  .intro { grid-template-columns: 220px minmax(0, 1fr); gap: 40px; }
+  :root { --profile-heading-size: 30px; }
+}
+@media (max-width: 680px) {
+  :root { --profile-heading-size: 28px; }
+  .page { padding: 30px 22px 24px; }
+  .intro { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .profile { display: grid; grid-template-columns: minmax(0, 1fr) 112px; column-gap: 18px; align-items: start; }
+  .profile h1 { grid-column: 1; }
+  .role { grid-column: 1; margin-bottom: 12px; }
+  .portrait { grid-column: 2; grid-row: 1 / 4; width: 112px; height: 168px; }
+  .profile-links { grid-column: 1; margin-top: 0; gap: 4px; }
+  .profile-links a, .email-label { font-size: 14px; }
+  body { font-size: 15px; }
+  .about-heading { margin-bottom: 18px; }
+  .section-nav { gap: 10px 19px; padding: 17px 0; }
+  .section-nav a { font-size: 15px; }
+  .content-section { padding-top: 36px; }
+  h2 { font-size: 23px; margin-bottom: 22px; }
+  .paper h3 { font-size: 16px; }
+  .paper p { font-size: 14px; }
+  .academic-path { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 14px; margin-top: 36px; }
+}
+@media (max-width: 360px) {
+  .page { padding-left: 16px; padding-right: 16px; }
+  .profile { grid-template-columns: minmax(0, 1fr) 94px; gap: 12px; }
+  .portrait { width: 94px; height: 141px; }
+  :root { --profile-heading-size: 25px; }
+}
+@media print {
+  .page { max-width: none; padding: 0; }
+  .intro { grid-template-columns: 200px minmax(0, 1fr); gap: 30px; }
+  .section-nav, .skip-link, .page-footer { display: none; }
+  .paper { break-inside: avoid; }
+  .content-section { padding-top: 28px; }
+}
+    </style>
+    <title>Renyuan Xu | Stanford University</title>
   </head>
   <body>
-    <!-- <h1>Hello, world!</h1> -->
-    <div class="container pt-5 allstuffp">
-        <div class="row pt-5 allstuff">
-            <div class="col-md-4 pt-5">
-                <div class="fixed-posi">
-                <p class="name">Renyuan Xu</p>
-                <img src="images/renyuan3.png" width="200" height="300">
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/renyuan_cv.pdf">curriculum vitae</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=v930A-YAAAAJ&hl=en&oi=ao">google scholar</a></div>
-                 <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/renyuan-xu-b8073276/">linkedin</a></div>
-
-
-
-                <!-- <div class="pt-5">usercontext</div> -->
-                <!-- <div class="">travel history</div> -->
-                <!-- <div class="">this template</div> -->
-                </div>
-            </div>
-            <div class="col-md-8 pt-5 about">
-I am currently an assistant professor in the <a class="in-text" href="https://msande.stanford.edu/">Department of Management Science and Engineering</a> at Stanford University. I am also affiliated with the <a class="in-text" href="https://icme.stanford.edu/">Institute of Computational and Mathematical Engineering (ICME)</a>  and <a class="in-text" href="https://theory.stanford.edu/main/index.shtml">Stanford Theory Group</a>. Prior to joining Stanford, I held positions at New York University and the University of Southern California (2021–2025) and was a Hooke Research Fellow at the Mathematical Institute, University of Oxford (2019–2021). I received my Ph.D. in 2019 from the University of California, Berkeley in the Department of Industrial Engineering and Operations Research, where I was very fortunate to be advised by <a class="in-text" href="https://xinguo.ieor.berkeley.edu/">Professor Xin Guo</a>. <br> <br>
-
-
-              My research interests include mathematical finance, stochastic analysis, stochastic controls and games, and machine learning theory. I am also
-              interested in interdisciplinary topics that integrate methodologies in multiple fields such as applied probability, statistics, and optimization, 
-              along with their applications in addressing high-stake decision-making problems in modern large-scale systems, such as financial and economic systems.               Some of the topics that I have been working on recently:
-<br>
-              <ul>
-  <li>mathematical foundation of Generative AI, </li>
-                  <li>optimal stopping and dynamic information acquisition,</li>
-                <li>stochastic control, stochastic games, and mean-field games,</li>
-                 <li>reinforcement learning theory, </li>
-                 <li> and their applications in market microstructure and risk management </li>
-</ul>
-
-
-           
-      <br> Very exicted to co-lead the working group on <a class="in-text" href="https://www.imsi.institute/no_index/math-foundations-diffusion-model-for-efficient0sequential-data-modeling">Mathematical Foundations of Diffusion Model for Efficient Sequential Data Modeling</a> at IMSI; look forward to diving deep into a few exicting topics in diffusion models! 
-              Later this year, we are organizing  a  workshop on <a class="in-text" href="https://mlxor-2026.github.io/">Machine Learning and Operations Research</a>  with a special focus on generative AI for deicison making at NeurIPS 2026.
-          We will organize a workshop on <a class="in-text" href="https://conferences.cirm-math.fr/3675.html">From Stochastic Processes to Optimal Transport: Applications in Machine Learning</a>  at International Centre Meetings Mathematics (CIRM) in Marseille, France in April 2027.  
-            I have been co-organizing the  <a class="in-text" href="https://sites.google.com/view/mlfinance/home/past-events?authuser=0"
-                     target="_blank">World Online Seminar on Machine Learning in Finance</a> since 2021.  
-              <br> <br>     
-
-              We recently   organized a workshop on <a class="in-text" href="https://www.oxfordml.school/"
-                     target="_blank">  Foundations of Deep Generative Models </a> at ICML 2026. 
-               I co-organized  a month-long program on   <a class="in-text" href="https://www.newton.ac.uk/event/scl/">Bridging Stochastic Control And Reinforcement Learning</a> jointly at Isaac Newton Institute and Alan Turing Institute (Nov 3 - Nov 28, 2025).
-              I also co-organized a  workshop on <a class="in-text" href="https://sites.google.com/view/neurips-25-gen-ai-in-finance/home">Generative AI in Finance</a> at NeurIPS 2025 in San Diego (Dec 6-7, 2025).
-              I co-organized a workshop on <a class="in-text" href="https://www.birs.ca/events/2025/5-day-workshops/25w5428">Advances in Stochastic Control and Reinforcement Learning</a> at the Banff International Research Station (April 27 - May 2, 2025).  
- I was the local organizing chair of the 5th and a program co-chair of the 3rd <a class="in-text" href="https://ai-finance.org/icaif22/"
-                     target="_blank">ACM International Conference on AI in Finance (ICAIF)</a>. I also served as the finance area chair of the  <a class="in-text" href="https://www.oxfordml.school/"
-                     target="_blank">Oxford Machine Learning Summer School </a>  in 2022 and 2023.
-
-              
-              
-              <br> <br>
-
-Please find my cv <a class="in-text" href="assets/renyuan_cv.pdf" target="_blank">here</a>. <br>
-Office:  Room 355, Jen-Hsun Huang Engineering Center, Stanford <br>
-Email:  renyuanxu (at) stanford (dot) edu<br> <br>
-
-
-
-
-<p class="header pt-5">Working Papers and Preprints</p>
-
-<p class="paper my-2 pl-2">
-
-
-  <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Diffusion Models for Dynamic Volatility Surface Generation and Data-driven Hedging
-
-
-</span><br>
-                    with Yinbin Han, Jack Yuxiang Zhang, Manuel Torres and Fernando Acero (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2609.13402" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Weak-to-Strong Learning in Decision Making
-
-</span><br>
-                    with Jingwei Ji (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2607.18467" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-  
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Expressivity and Statistical Trade-offs in Diffusion Policy Learning
-
-</span><br>
-                    with Viet Vu,  Jiacheng Zhang and Yufei Zhang (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2607.07967" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-  
-
-  <div class="py-2">
-     <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Diffusion Models for Adaptive Sequential Data Generation  </span><br>
-                    with  Haoyang Cao, Minshuo Chen and Yinbin Han (2026)
-                    <br>
-                  Submitted <span class="tagsep">|</span>
-  <a class="tag" href="https://arxiv.org/pdf/2606.06007" target="_blank">ArXiv</a><span class="tagsep">|</span>
-<br>
-                   Code <span class="tagsep">|</span>
-  <a class="tag" href="https://github.com/yinbinhan/adapted_diffusion_model" target="_blank">Github</a><span class="tagsep">|</span>
-                 </p>
-                 </div>
-
-  <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> One-Step Generative Modeling via Wasserstein Gradient Flows  </span><br>
-                    with  Jiaqi Han, Puheng Li, Qiushan Guo,  Stefano Ermon and Emmanuel J. Candès (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-  <a class="tag" href="https://arxiv.org/abs//2605.11755" target="_blank">ArXiv</a><span class="tagsep">|</span>
-<br>
-                   Project page <span class="tagsep">|</span>
-  <a class="tag" href="https://hanjq17.github.io/W-Flow/." target="_blank">Github</a><span class="tagsep">|</span>
-                 </p>
-                 </div>
-  
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Scalable Bi-causal Optimal Transport via KL Relaxation and Policy Gradients
-
-</span><br>
-                    with Haoyang Cao, Jesse Hoekstra,  Yumin Xu and Ruixun Zhang (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2605.17271" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-  
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Reinforcement Learning in Real Option Models
-</span><br>
-                    with Jodi Dianetti and Giorgio Ferrari (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2602.15643" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-  
-
- <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Schrödinger Bridge with Transport Relaxation  </span><br>
-                    with  Yifan Jiang and  Luhao Zhang (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-  <a class="tag" href="http://arxiv.org/abs/2602.08118" target="_blank">ArXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-  
-           <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Conditional Diffusion Guidance under Hard Constraint: A Stochastic Analysis Approach  </span><br>
-                    with  Zhengyi Guo and  Wenpin Tang (2026)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-  <a class="tag" href="https://www.arxiv.org/abs/2602.05533" target="_blank">ArXiv</a><span class="tagsep">|</span>
-<br>
-                   Code <span class="tagsep">|</span>
-  <a class="tag" href="https://github.com/ZhengyiGuo2002/CDG_Finance." target="_blank">Github</a><span class="tagsep">|</span>
-                 </p>
-                 </div>
-       
-       <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Schrödinger Bridge for Generative AI: Soft-constrained Formulation and Convergence Analysis  </span><br>
-                    with Jin Ma and Ying Tan (2025)
-                    <br>
-                  Revision, Mathematical Finance <span class="tagsep">|</span>
-  <a class="tag" href="https://arxiv.org/abs/2510.11829" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-   
- <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Adaptive Partitioning and Learning for Stochastic Control of
-Diffusion Processes  </span><br>
-                    with Hanqing Jin and Yanzhao Yang (2025)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-  <a class="tag" href="https://arxiv.org/abs/2512.14991" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
- <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Entropy Regularization in Mean-Field Games of Optimal Stopping
-  </span><br>
-                    with Jodi Dianetti, Roxana Dumitrescu and Giorgio Ferrari (2025)
-                    <br>
-                 Revision, SIAM Journal on Control and Opitmization <span class="tagsep">|</span>
-  <a class="tag" href="https://arxiv.org/pdf/2509.18821" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-              
-   
-    <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Diffusion Factor Models: Generating High-Dimensional Returns with Factor Structure  </span><br>
-                    with Minshuo Chen, Yumin Xu and Ruixun Zhang (2025)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5211437" target="_blank">SSRN</a><span class="tagsep">|</span>
- <br>
-                   Code <span class="tagsep">|</span>
-  <a class="tag" href="https://github.com/xymmmm00/diffusion_factor_model" target="_blank">Github</a><span class="tagsep">|</span>
-
-      <br>
-                  SIAM Financial Mathematics and Engineering Conference Best Paper
-Prize (awardee: Yumin Xu) <span class="tagsep">|</span>
-  <a class="tag" href="https://www.siam.org/programs-initiatives/prizes-awards/activity-group-prizes/siam-activity-group-on-financial-mathematics-and-engineering-conference-paper-prize/prize-history/" target="_blank">Annoucement</a><span class="tagsep">|</span>
-                 </p>
-                 </div>
-
-      
-
-   
-   <div class="py-2">  <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Multi-Task Dynamic Pricing in Credit Market with Contextual Information  </span><br>
-                    with Jingwei Ji and Adel Javanmard (2024)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993594" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-              
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Exploratory Optimal Stopping: A Singular Control Formulation  </span><br>
-                    with Jodi Dianetti and Giorgio Ferrari (2024)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2408.09335" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-
-
-
-              
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Periodic Trading Activities in Financial Markets: Mean-field Liquidation Game with Major-Minor Players </span><br>
-                    with Yufan Chen, Lan Wu and Ruixun Zhang (2024)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4929201" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-              
-
-
-
-
-
-
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Decision Making Under Costly Sequential Information Acquisition: The Paradigm of Reversible and Irreversible Decisions</span><br>
-                    with Thaleia Zariphopoulou and Luhao Zhang (2023)
-                    <br>
-                  Revision, Mathematics of Operations Research <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4680609" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-
-
-              
-         
-
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Implicit Regularization and Convergence of
-Gradient Descent for Deep Residual Networks</span><br>
-                    with Rama Cont and Alain Rossier (2022)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2204.07261.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-              <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Asymptotic Analysis of Deep
-Residual Networks</span><br>
-                    with Rama Cont and Alain Rossier (2022)
-                    <br>
-                   Submitted <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2212.08199.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-
-
-
-
-              
-
-
-
-              <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Risk-sensitive Markov Decision Process and Learning under General Utilities</span><br>
-                    with Zhengqi Wu (2023)
-                    <br>
-                   Revision, JMLR <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4613523" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-
-              
-  <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Linear-quadratic Gaussian Games with Asymmetric Information: Belief Corrections Using the Opponents Actions</span><br>
-                    with Huining Yang and Ben Hambly (2023)
-                    <br>
-                   Revision, SIAM Journal on Control and Optimization <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2307.15842.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-
-              
-
-
-
-
-              
-
-
-
-
-              
-
-              
-                 <p class="header pt-5">Jounal Publications</p>
-             
-
-   <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Risk-Aware Linear Bandits: Theory and Applications in Smart Order Routing</span><br>
-                     with Jingwei Ji and Ruihao Zhu (2023)
-                    <br>
-                    Accepted, Operations Research (2026) <span class="tagsep">|</span>
-                     <a class="tag" href="https://arxiv.org/abs/2208.02389" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                    </div>
-
-              
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Fast Policy Learning for Linear Quadratic Control with Entropy Regularization</span><br>
-                    with Xin Guo and Xinyu Li (2023)
-                    <br>
-                  Accepted, SIAM Journal on Control and Optimization (2025) <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4642667" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-              
-           <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Inference of Utilities and Time Preference in Sequential Decision-Making</span><br>
-                    with Haoyang Cao and Zhengqi Wu (2024)
-                    <br>
-                  Accepted, Applied Mathematics and Optimization (2025) <span class="tagsep">|</span>
-
-  <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4840776" target="_blank">SSRN</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-              
-              <div class="py-2">
-                <p class="paper my-2 pl-2">
-                     <span class="papertitle">Policy Gradient Finds Global Optimum of
-Nearly Linear-quadratic Control Systems</span><br>
-                    with Yinbin Han amd Meisam Razaviyayn (2022)
-                    <br>
-               SIAM Journal on Control and Optimization (2025) <span class="tagsep">|</span>
-                     <a class="tag" href="https://arxiv.org/abs/2303.08431" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">TailGAN: Nonparametric Scenario
-Generation for Tail Risk Estimation</span><br>
-                    with Rama Cont, Mihai Cucuringu and Chao Zhang (2022)
-                    <br>
-                  Management Science (2025)
-                   <span class="tagsep">|</span>
-                     <a class="tag" href="https://arxiv.org/abs/2203.01664" target="_blank">arXiv</a><span class="tagsep">|</span>
-<br>
-                    Code
-                   <span class="tagsep">|</span>
-                     <a class="tag" href="https://github.com/chaozhang-ox/Tail-GAN" target="_blank">Github</a><span class="tagsep">|</span>
-
-
-                   
-                 </p>
-                 </div>
-
-              
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Model-free Analysis of Dynamic Trading Strategies</span><br>
-                    with Rama Cont and Anna Ananova (2023)
-                    <br>
-                 SIAM Journal on Financial Mathematics (2025) <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2011.02870.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-              
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Mean-Field Multi-Agent Reinforcement
-Learning: A Decentralized Network Approach</span><br>
-                    with Xin Guo, Haotian Gu and Xiaoli Wei (2021)
-                  <br>
-              Mathematics of Operations Research (2024)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2108.02731.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://pubsonline.informs.org/doi/10.1287/moor.2022.0055" target="_blank">DOI</a>
-                 </p>
-                 </div>
-                   
-                   
-                   
-        
-
-              
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Recent Advances in Reinforcement Learning in Finance
-
-</span><br>
-                    with  Ben Hambly and Huining Yang (2021)
-                    <br>
-              Mathematical Finance (2023)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2112.04553.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mafi.12382" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Policy Gradient Methods Find the Nash Equilibrium in N-player General-sum Linear-quadratic Games
-
-</span><br>
-                    with  Ben Hambly and Huining Yang (2021)
-                    <br>
-                Journal of Machine Learning Research (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2107.13090.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://www.jmlr.org/papers/volume24/21-0842/21-0842.pdf" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Modelling COVID-19 Contagion: Risk Assessment and Targeted Mitigation Policies
-</span><br>
-                    with  Rama Cont and Artur Kotlicki (2020)
-                    <br>
-                Royal Society Open Science (2021)
-                    <br>
-                     <a class="tag" href="https://www.medrxiv.org/content/10.1101/2020.08.26.20182477v2" target="_blank">medRxiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://royalsocietypublishing.org/doi/10.1098/rsos.201535" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Interbank Lending with Benchmark Rates: Pareto Optima for a Class of Singular Control Games
-</span><br>
-                    with Xin Guo and Rama Cont (2020)
-                    <br>
-                  Mathematical Finance (2021)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2005.05766.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mafi.12325?casa_token=SCHVMu0zJDgAAAAA:Hs5mdOsD4n84IFH69-xCJYL9YI9pLp8P-RZkncCD7Ml7SZ08JCk6-zhEDjd7SXikUJtjxPHBBBvqsg" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Policy Gradient Methods for the Noisy Linear Quadratic Regulator over a Finite Horizon
-</span><br>
-                    with Ben Hambly and Huining Yang (2020)
-                    <br>
-                   SIAM Journal on Control and Optimization (2021)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/abs/2011.10300" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1382386" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Entropy Regularization for Mean Field Games with Learning</span><br>
-                    with Xin Guo and Thaleia Zariphopoulou (2020)
-                    <br>
-                   Mathematics of Operations Research (2022)<span class="tagsep">|</span>  <a class="tag" href="https://pubsonline.informs.org/doi/epdf/10.1287/moor.2026.50th.v51.n1" target="_blank">Editor’s Pick at MOR: 50 Papers for 50 Years</a><span class="tagsep">|</span>
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2010.00145.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2021.1238?journalCode=moor" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
- <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Mean-Field Controls with Q-learning for Cooperative MARL: Convergence and Complexity Analysis
-</span><br>
-                    with Xin Guo, Haotian Gu and Xiaoli Wei (2020)
-                    <br>
-                    SIAM Journal on Mathematics of Data Science (2021)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2002.04131.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1360700" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
-  <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">A General Framework for Learning Mean-Field Games</span><br>
-                    with Xin Guo, Anran Hu and Junzi Zhang (2020)
-                    <br>
-                    Mathematics of Operations Research (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/abs/2003.06069" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2022.1274" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
-   <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Delay-Adaptive Learning in Generalized Linear Contextual Bandits</span><br>
-                    with Jose Blanchet and Zhengyuan Zhou (2020)
-                    <br>
-                    Mathematics of Operations Research (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/2003.05174.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2023.1358?journalCode=moor" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-               <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Dynamic Programming Principles for Mean-Field Controls with Learning</span><br>
-                    with Xin Guo, Haotian Gu and Xiaoli Wei (2019)
-                    <br>
-                    Operations Research (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/1911.07314.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.2395" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-
-     <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Transaction Cost Data Analytics for Corporate Bonds</span><br>
-                    with Xin Guo and Charles-Albert Lehalle (2019)
-                    <br>
-                    Quantitative Finance (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/1903.09140.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://www.tandfonline.com/doi/pdf/10.1080/14697688.2022.2054723" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-        <div class="py-2">
-
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">A Class of Stochastic Games and Moving Free Boundary Problems</span><br>
-                    with Xin Guo and Wenpin Tang (2018)
-                    <br>
-                    SIAM Journal on Control and Optimization (2022)
-                    <br>
-                     <a class="tag" href="https://arxiv.org/pdf/1809.03459.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1322558" target="_blank">DOI</a>
-                 </p>
-
-                 </div>
-
-
-              <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Stochastic Games for Fuel Followers Problem: N versus MFG</span><br>
-                    with Xin Guo (2018)
-                    <br>
-                    SIAM Journal on Control and Optimization (2019)
-                    <br>
-
-
-                     <a class="tag" href="https://arxiv.org/pdf/1803.02925.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                     <a class="tag" href="https://epubs.siam.org/doi/abs/10.1137/17M1159531" target="_blank">DOI</a>
-                 </p>
-                 </div>
-
-   <p class="header pt-5">Conference Preceedings</p>
-
-
-<div class="py-2">
-                     <span class="papertitle"> Sobolev Regularized Score Difference Estimation in Diffusion Models  </span><br>
-                    with Jose Blanchet and Chenghan Xie (2026)
-                    <br>
-                   International Conference on Machine Learning (ICML 2026) <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2608.18237" target="_blank">arXiv</a><span class="tagsep">|</span>
- <br>
-                   Code <span class="tagsep">|</span>
-  <a class="tag" href="https://github.com/chenghands-on/Sobolev-Regularized-Score-Difference-Estimator" target="_blank">Github</a><span class="tagsep">|</span>
-                 </p>
-                 </p>
-                 </div>
-
-              
-
-<div class="py-2">
-                     <span class="papertitle"> Stochastic Control for Fine-tuning Diffusion Models:
-Optimality, Regularity, and Convergence  </span><br>
-                    with Yinbin Han and Meisam Razaviyayn (2024)
-                    <br>
-                   International Conference on Machine Learning (ICML 2025) <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/pdf/2412.18164" target="_blank">arXiv</a><span class="tagsep">|</span>
- <br>
-                   Code <span class="tagsep">|</span>
-  <a class="tag" href="https://github.com/yinbinhan/fine-tuning-of-diffusion-models" target="_blank">Github</a><span class="tagsep">|</span>
-                 </p>
-                 </p>
-                 </div>
-
-              
-              <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle"> Neural Network-based Score
-Estimation in Diffusion Models: Optimization and
-Generalization</span><br>
-                    with Yinbin Han and Meisam Razaviyayn (2023)
-                    <br>
-                   International Conference on Learning Representation (ICLR) '24 <span class="tagsep">|</span>
-
-  <a class="tag" href="https://arxiv.org/abs/2401.15604" target="_blank">arXiv</a><span class="tagsep">|</span>
-
-                 </p>
-                 </div>
-
-              <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Risk-Aware Linear Bandits with Application in Smart Order Routing</span><br>
-                     with Jingwei Ji and Ruihao Zhu (2022)<br>
-                    <span class="conf"><a class="confshort" href="https://ai-finance.org/icaif22/</a> | ACM International Conference on AI in Finance</span><br>
-
-
-                   <a class="tag" href="https://dl.acm.org/doi/abs/10.1145/3533271.3561692" target="_blank">proceeding</a>
-                 </p>
-                    </div>
-
-<div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Scaling Properties of Deep Residual Networks</span><br>
-                     with Alain–Sam Cohen, Rama Cont, and Alain Rossier (2021)<br>
-                     <span class="conf"><a class="confshort" href="https://icml.cc/Conferences/2021">ICML'21</a> | International Conference on Machine Learning</span><br>
-
-                     <a class="tag" href="https://arxiv.org/pdf/2105.12245.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                   <a class="tag" href="http://proceedings.mlr.press/v139/cohen21b/cohen21b.pdf" target="_blank">proceeding</a>
-                 </p>
-                    </div>
-
-
-   <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Learning in Generalized
-Linear Contextual Bandits with Stochastic Delays</span><br>
-                     with Jose Blanchet and Zhengyuan Zhou (2019)<br>
-                     <span class="conf"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS'19 (Spotlight)</a> | Conference on Neural Information Processing Systems</span><br>
-
-
-                   <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/56cb94cb34617aeadff1e79b53f38354-Paper.pdf" target="_blank">proceeding</a>
-                 </p>
-                    </div>
-
-
-                 <div class="py-2">
-                 <p class="paper my-2 pl-2">
-                     <span class="papertitle">Learning Mean-Field Games</span><br>
-                     with Xin Guo, Anran Hu and Junzi Zhang (2019)<br>
-                     <span class="conf"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS'19</a> | Conference on Neural Information Processing Systems</span><br>
-
-                     <a class="tag" href="https://arxiv.org/pdf/1901.09585.pdf" target="_blank">arXiv</a><span class="tagsep">|</span>
-                   <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/030e65da2b1c944090548d36b244b28d-Paper.pdf" target="_blank">proceeding</a>
-                 </p>
-                    </div>
-
-
-
-              
-              
-
-                <p class="header pt-5">Ph.D. Students</p>
-              I am very fortunate to advise and work with the following Ph.D. students:
-              <ul>
-
-  <li>  <a class="in-text" href="https://yinbinhan.github.io/"
-                     target="_blank">Yinbin Han, Stanford MS&E </a> (2021 - ), co-advised with <a class="in-text" href="https://sites.usc.edu/razaviyayn/"
-                     target="_blank">Meisam Razaviyayn</a>
- </li>
-                <li>  <a class="in-text" href="https://drg-jingweiji.github.io/"
-                     target="_blank">Jingwei Ji, Stanford MS&E</a>  (2021 - )
-                  </li>
-<li> Zhengqi Wu, USC (2021 - )</li>
- <li>  <a class="in-text" href="https://leo-li.com/"
-                     target="_blank">Puheng Li, Stanford Stats</a> (2025 - ), co-advised with <a class="in-text" href="https://candes.su.domains/"
-                     target="_blank">Emmanuel Candès</a>                
-
-               <li>  <a class="in-text" href="https://scholar.google.com/citations?user=-npEdYsAAAAJ&hl=en"
-                     target="_blank">Chenghan Xie, Stanford MS&E</a> (2025 - ), co-advised with <a class="in-text" href="https://web.stanford.edu/~jblanche/"
-                     target="_blank">Jose Blanchet</a>                
-</ul>
- </ul>             
-   <p class="header pt-5">Recognitions and Awards</p>
-<ul>
-<li>  Jagdeep and Roshni Singh Faculty Fellow, Stanford, 2025-</li>
-  
-  <li> JP Morgan AI Faculty  Research Award, 2025</li>
- <li>  <a class="in-text" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2339240&HistoricalAwards=false"
-                     target="_blank"> NSF CAREER Award, Division Of Mathematical Sciences
-</a>, 2024</li>
-  
-
-   <li>  <a class="in-text" href="https://www.siam.org/prizes-recognition/activity-group-prizes/detail/siag-fme-early-career-prize"
-                     target="_blank">SIAM Activity Group on Financial Mathematics and Engineering Early Career Prize
-</a>, 2023</li>
-
-  <li>  <a class="in-text" href="https://www.jpmorgan.com/technology/artificial-intelligence/research-awards/faculty-research-awards-2022"
-                     target="_blank">JP Morgan AI Faculty  Research Award</a>, 2022</li>
-   <li>  <a class="in-text" href="https://wise.usc.edu/programs/grants-and-awards/faculty/wise-gabilan-assistant-professorship/"
-                     target="_blank">WiSE Gabilan Assistant Professorship</a>, 2021 - 2024</li>
-  
-     <li> Research Recognition Award, University of Oxford,  2020</li>
-  <li> Finalist, INFORMS Applied Probability Society Best Student Paper Competition, 2018</li>
-
-</ul>
-
-   <p class="header pt-5">Teaching</p>
-I am teaching the following courses at Stanford:
-               <ul>
-                <li> MS&E 245B: Advanced Investment Science, Winter 2026</li>
-                  <li> MS&E 242: Machine Learning for Algorithmic Trading, Spring 2026</li>
-                  <li> MS&E 342: Stochastic Systems and Learning Theory with Applications in Finance, Spring 2026</li>
-</ul>
-
-              
-              I was teaching the following Ph.D. level course at NYU:
-               <ul>
-                <li> FRE-GY 9073: Stochastic Systems and Modern Machine Learning Theory, Fall 2024</li>
-</ul>
-I was teaching the following courses at USC:
-               <ul>
-                <li> ISE537 (Master level): Financial Analytics (Machine Learning in Finance), Fall 2021/2022/2023</li>
-  <li> ISE599 (Ph.D. level): Special Topics in Control Theory and Reinforcement Learning, Fall 2022</li>
-</ul>
-     I was the tutor for the following courses at the University of Oxford:
-               <ul>
-                <li>Stochastic Control, Hilary Term 2020</li>
-  <li> Machine Learning, Hilary Term 2020</li>
-                 <li> Market Microstructure and Algorithmic Trading, Hilary Term 2020</li>
-                 <li> Statistics and Financial Data Analysis, Michaelmas Term 2019</li>
-</ul>
-
-              <div class="row text-center py-4">
-                    <div class="mx-auto mt-2">
-                        <img class="img-fluid instilogo p-1" src="images/berkeley.png">
-                        <div class="institution">Berkeley</div>
-                        <div class="years">2014 - 2019</div>
-                    </div>
-                    <div class="mx-auto mt-2">
-                        <img class="img-fluid instilogo p-1" src="images/oxford.png">
-                        <div class="institution">Oxford</div>
-                        <div class="years">2019-2021</div>
-                    </div>
-                    <div class="mx-auto mt-2">
-                        <img class="img-fluid instilogo p-1" src="images/usc.png">
-                        <div class="institution">USC</div>
-                        <div class="years">2021 - 2024</div>
-                    </div>
-                 <div class="mx-auto mt-2">
-                        <img class="img-fluid instilogo p-1" src="images/nyu.png">
-                        <div class="institution">NYU</div>
-                        <div class="years">2024 - 2025</div>
-                    </div>
-
- <div class="mx-auto mt-2">
-                        <img class="img-fluid instilogo p-1" src="images/stanford.png">
-                        <div class="institution">Stanford</div>
-                        <div class="years">2025 - </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="page" id="top">
+      <header class="intro" aria-label="Profile and research overview">
+        <div class="profile">
+          <h1>Renyuan Xu</h1>
+          <p class="role">Assistant Professor<br>Stanford University</p>
+          <img class="portrait" src="images/renyuan3.png" width="200" height="300" alt="Renyuan Xu" fetchpriority="high">
+          <nav class="profile-links" aria-label="Professional profiles">
+            <a href="assets/renyuan_cv.pdf" target="_blank" rel="noopener noreferrer">Curriculum vitae</a>
+            <a href="https://scholar.google.com/citations?user=v930A-YAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/renyuan-xu-b8073276/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <p class="profile-email"><span class="email-label">Email</span> <span>renyuanxu@stanford.edu</span></p>
+          </nav>
         </div>
+        <div class="bio">
+          <h2 class="about-heading">About &amp; Research</h2>
+          <p>I am an assistant professor in the <a href="https://msande.stanford.edu/">Department of Management Science and Engineering</a> at Stanford University. I am also affiliated with the <a href="https://icme.stanford.edu/">Institute of Computational and Mathematical Engineering (ICME)</a> and the <a href="https://theory.stanford.edu/main/index.shtml">Stanford Theory Group</a>.</p>
+          <p>Prior to joining Stanford, I held positions at New York University and the University of Southern California (2021–2025) and was a Hooke Research Fellow at the Mathematical Institute, University of Oxford (2019–2021). I received my Ph.D. in 2019 from the Department of Industrial Engineering and Operations Research at the University of California, Berkeley, where I was very fortunate to be advised by <a href="https://xinguo.ieor.berkeley.edu/">Professor Xin Guo</a>.</p>
+          <p>My research interests include mathematical finance, stochastic analysis, stochastic control and games, and machine learning theory. I am also interested in interdisciplinary work connecting applied probability, statistics, and optimization, with applications to high-stakes decision-making problems in large-scale systems, including finance and economics. Recent topics include:</p>
+          <ul class="research-topics">
+            <li>Mathematical foundations of generative AI</li>
+            <li>Optimal stopping and dynamic information acquisition</li>
+            <li>Stochastic control, stochastic games, and mean-field games</li>
+            <li>Reinforcement learning theory</li>
+            <li>Applications in market microstructure and risk management</li>
+          </ul>
+        </div>
+      </header>
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#activities">Activities</a>
+        <a href="#working-papers">Working papers</a>
+        <a href="#journal-publications">Journal publications</a>
+        <a href="#conference-proceedings">Conference proceedings</a>
+        <a href="#students">Students</a>
+        <a href="#awards">Awards</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
+      <main id="main-content">
+        <section class="content-section activities" id="activities" aria-labelledby="activities-heading">
+          <h2 id="activities-heading">Recent &amp; Upcoming Activities</h2>
+          <ul>
+            <li>Co-lead, IMSI working group on <a href="https://www.imsi.institute/no_index/math-foundations-diffusion-model-for-efficient0sequential-data-modeling">Mathematical Foundations of Diffusion Model for Efficient Sequential Data Modeling</a>.</li>
+            <li>Workshop co-organizer, <a href="https://mlxor-2026.github.io/">Machine Learning and Operations Research</a> at NeurIPS 2026, with a special focus on generative AI for decision making.</li>
+            <li>Workshop co-organizer, <a href="https://conferences.cirm-math.fr/3675.html">From Stochastic Processes to Optimal Transport: Applications in Machine Learning</a> at CIRM in Marseille, France, in April 2027.</li>
+            <li>Co-organizer, <a href="https://sites.google.com/view/mlfinance/home/past-events?authuser=0">World Online Seminar on Machine Learning in Finance</a>, since 2021.</li>
+            <li>Co-organizer, <a href="https://fdgm-workshop.github.io/FDGM_ICML2026/">Foundations of Deep Generative Models</a>, ICML 2026.</li>
+            <li>Co-organizer, <a href="https://www.newton.ac.uk/event/scl/">Bridging Stochastic Control and Reinforcement Learning</a>, a month-long program jointly at the Isaac Newton Institute and the Alan Turing Institute, November 3–28, 2025.</li>
+            <li>Co-organizer, <a href="https://sites.google.com/view/neurips-25-gen-ai-in-finance/home">Generative AI in Finance</a>, NeurIPS 2025, San Diego, December 6–7, 2025.</li>
+            <li>Co-organizer, <a href="https://www.birs.ca/events/2025/5-day-workshops/25w5428">Advances in Stochastic Control and Reinforcement Learning</a>, Banff International Research Station, April 27–May 2, 2025.</li>
+            <li>Local organizing chair of the 5th and program co-chair of the 3rd <a href="https://ai-finance.org/icaif22/">ACM International Conference on AI in Finance (ICAIF)</a>.</li>
+          </ul>
+        </section>
+      <section class="content-section" id="working-papers" aria-labelledby="working-papers-heading">
+        <h2 id="working-papers-heading">Working papers &amp; preprints</h2>
+        <article class="paper">
+          <h3>Diffusion Models for Dynamic Volatility Surface Generation and Data-driven Hedging</h3>
+          <p class="paper-authors">with Yinbin Han, Jack Yuxiang Zhang, Manuel Torres and Fernando Acero (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2609.13402" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Weak-to-Strong Learning in Decision Making</h3>
+          <p class="paper-authors">with Jingwei Ji (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2607.18467" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Expressivity and Statistical Trade-offs in Diffusion Policy Learning</h3>
+          <p class="paper-authors">with Viet Vu, Jiacheng Zhang and Yufei Zhang (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2607.07967" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Diffusion Models for Adaptive Sequential Data Generation</h3>
+          <p class="paper-authors">with Haoyang Cao, Minshuo Chen and Yinbin Han (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2606.06007" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/yinbinhan/adapted_diffusion_model" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </article>
+        <article class="paper">
+          <h3>One-Step Generative Modeling via Wasserstein Gradient Flows</h3>
+          <p class="paper-authors">with Jiaqi Han, Puheng Li, Qiushan Guo, Stefano Ermon and Emmanuel J. Candès (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2605.11755" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://hanjq17.github.io/W-Flow/" target="_blank" rel="noopener noreferrer">Project</a></p>
+        </article>
+        <article class="paper">
+          <h3>Scalable Bi-causal Optimal Transport via KL Relaxation and Policy Gradients</h3>
+          <p class="paper-authors">with Haoyang Cao, Jesse Hoekstra, Yumin Xu and Ruixun Zhang (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2605.17271" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Reinforcement Learning in Real Option Models</h3>
+          <p class="paper-authors">with Jodi Dianetti and Giorgio Ferrari (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2602.15643" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Schrödinger Bridge with Transport Relaxation</h3>
+          <p class="paper-authors">with Yifan Jiang and Luhao Zhang (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2602.08118" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Conditional Diffusion Guidance under Hard Constraint: A Stochastic Analysis Approach</h3>
+          <p class="paper-authors">with Zhengyi Guo and Wenpin Tang (2026)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2602.05533" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/ZhengyiGuo2002/CDG_Finance" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </article>
+        <article class="paper">
+          <h3>Schrödinger Bridge for Generative AI: Soft-constrained Formulation and Convergence Analysis</h3>
+          <p class="paper-authors">with Jin Ma and Ying Tan (2025)</p>
+          <p class="paper-meta">Revision, Mathematical Finance <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2510.11829" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Adaptive Partitioning and Learning for Stochastic Control of Diffusion Processes</h3>
+          <p class="paper-authors">with Hanqing Jin and Yanzhao Yang (2025)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2512.14991" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Entropy Regularization in Mean-Field Games of Optimal Stopping</h3>
+          <p class="paper-authors">with Jodi Dianetti, Roxana Dumitrescu and Giorgio Ferrari (2025)</p>
+          <p class="paper-meta">Revision, SIAM Journal on Control and Optimization <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2509.18821" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Diffusion Factor Models: Generating High-Dimensional Returns with Factor Structure</h3>
+          <p class="paper-authors">with Minshuo Chen, Yumin Xu and Ruixun Zhang (2025)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5211437" target="_blank" rel="noopener noreferrer">SSRN</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/xymmmm00/diffusion_factor_model" target="_blank" rel="noopener noreferrer">Code</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://www.siam.org/programs-initiatives/prizes-awards/activity-group-prizes/siam-activity-group-on-financial-mathematics-and-engineering-conference-paper-prize/prize-history/" target="_blank" rel="noopener noreferrer" title="SIAM Financial Mathematics and Engineering Conference Best Paper Prize; awardee: Yumin Xu">SIAM FME Best Paper Prize (Yumin Xu)</a></p>
+        </article>
+        <article class="paper">
+          <h3>Multi-Task Dynamic Pricing in Credit Market with Contextual Information</h3>
+          <p class="paper-authors">with Jingwei Ji and Adel Javanmard (2024)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993594" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Exploratory Optimal Stopping: A Singular Control Formulation</h3>
+          <p class="paper-authors">with Jodi Dianetti and Giorgio Ferrari (2024)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2408.09335" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Periodic Trading Activities in Financial Markets: Mean-field Liquidation Game with Major-Minor Players</h3>
+          <p class="paper-authors">with Yufan Chen, Lan Wu and Ruixun Zhang (2024)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4929201" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Decision Making Under Costly Sequential Information Acquisition: The Paradigm of Reversible and Irreversible Decisions</h3>
+          <p class="paper-authors">with Thaleia Zariphopoulou and Luhao Zhang (2023)</p>
+          <p class="paper-meta">Revision, Mathematics of Operations Research <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4680609" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Implicit Regularization and Convergence of Gradient Descent for Deep Residual Networks</h3>
+          <p class="paper-authors">with Rama Cont and Alain Rossier (2022)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2204.07261.pdf" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Asymptotic Analysis of Deep Residual Networks</h3>
+          <p class="paper-authors">with Rama Cont and Alain Rossier (2022)</p>
+          <p class="paper-meta">Submitted <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2212.08199.pdf" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Risk-sensitive Markov Decision Process and Learning under General Utilities</h3>
+          <p class="paper-authors">with Zhengqi Wu (2023)</p>
+          <p class="paper-meta">Revision, JMLR <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4613523" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Linear-quadratic Gaussian Games with Asymmetric Information: Belief Corrections Using the Opponents Actions</h3>
+          <p class="paper-authors">with Huining Yang and Ben Hambly (2023)</p>
+          <p class="paper-meta">Revision, SIAM Journal on Control and Optimization <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2307.15842.pdf" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+      </section>
+      <section class="content-section" id="journal-publications" aria-labelledby="journal-publications-heading">
+        <h2 id="journal-publications-heading">Journal publications</h2>
+        <article class="paper">
+          <h3>Risk-Aware Linear Bandits: Theory and Applications in Smart Order Routing</h3>
+          <p class="paper-authors">with Jingwei Ji and Ruihao Zhu (2023)</p>
+          <p class="paper-meta">Accepted, Operations Research (2026) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2208.02389" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Fast Policy Learning for Linear Quadratic Control with Entropy Regularization</h3>
+          <p class="paper-authors">with Xin Guo and Xinyu Li (2023)</p>
+          <p class="paper-meta">Accepted, SIAM Journal on Control and Optimization (2025) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4642667" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Inference of Utilities and Time Preference in Sequential Decision-Making</h3>
+          <p class="paper-authors">with Haoyang Cao and Zhengqi Wu (2024)</p>
+          <p class="paper-meta">Accepted, Applied Mathematics and Optimization (2025) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4840776" target="_blank" rel="noopener noreferrer">SSRN</a></p>
+        </article>
+        <article class="paper">
+          <h3>Policy Gradient Finds Global Optimum of Nearly Linear-quadratic Control Systems</h3>
+          <p class="paper-authors">with Yinbin Han and Meisam Razaviyayn (2022)</p>
+          <p class="paper-meta">SIAM Journal on Control and Optimization (2025) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2303.08431" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>TailGAN: Nonparametric Scenario Generation for Tail Risk Estimation</h3>
+          <p class="paper-authors">with Rama Cont, Mihai Cucuringu and Chao Zhang (2022)</p>
+          <p class="paper-meta">Management Science (2025) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2203.01664" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/chaozhang-ox/Tail-GAN" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </article>
+        <article class="paper">
+          <h3>Model-free Analysis of Dynamic Trading Strategies</h3>
+          <p class="paper-authors">with Rama Cont and Anna Ananova (2023)</p>
+          <p class="paper-meta">SIAM Journal on Financial Mathematics (2025) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2011.02870.pdf" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Mean-Field Multi-Agent Reinforcement Learning: A Decentralized Network Approach</h3>
+          <p class="paper-authors">with Xin Guo, Haotian Gu and Xiaoli Wei (2021)</p>
+          <p class="paper-meta">Mathematics of Operations Research (2024) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2108.02731.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/10.1287/moor.2022.0055" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Recent Advances in Reinforcement Learning in Finance</h3>
+          <p class="paper-authors">with Ben Hambly and Huining Yang (2021)</p>
+          <p class="paper-meta">Mathematical Finance (2023) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2112.04553.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mafi.12382" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Policy Gradient Methods Find the Nash Equilibrium in N-player General-sum Linear-quadratic Games</h3>
+          <p class="paper-authors">with Ben Hambly and Huining Yang (2021)</p>
+          <p class="paper-meta">Journal of Machine Learning Research (2023) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2107.13090.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://www.jmlr.org/papers/volume24/21-0842/21-0842.pdf" target="_blank" rel="noopener noreferrer">Journal paper</a></p>
+        </article>
+        <article class="paper">
+          <h3>Modelling COVID-19 Contagion: Risk Assessment and Targeted Mitigation Policies</h3>
+          <p class="paper-authors">with Rama Cont and Artur Kotlicki (2020)</p>
+          <p class="paper-meta">Royal Society Open Science (2021) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://www.medrxiv.org/content/10.1101/2020.08.26.20182477v2" target="_blank" rel="noopener noreferrer">medRxiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://royalsocietypublishing.org/doi/10.1098/rsos.201535" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Interbank Lending with Benchmark Rates: Pareto Optima for a Class of Singular Control Games</h3>
+          <p class="paper-authors">with Xin Guo and Rama Cont (2020)</p>
+          <p class="paper-meta">Mathematical Finance (2021) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2005.05766.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mafi.12325" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Policy Gradient Methods for the Noisy Linear Quadratic Regulator over a Finite Horizon</h3>
+          <p class="paper-authors">with Ben Hambly and Huining Yang (2020)</p>
+          <p class="paper-meta">SIAM Journal on Control and Optimization (2021) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2011.10300" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1382386" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Entropy Regularization for Mean Field Games with Learning</h3>
+          <p class="paper-authors">with Xin Guo and Thaleia Zariphopoulou (2020)</p>
+          <p class="paper-meta">Mathematics of Operations Research (2022)<span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/epdf/10.1287/moor.2026.50th.v51.n1" target="_blank" rel="noopener noreferrer">Editor’s Pick at MOR: 50 Papers for 50 Years</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2010.00145.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2021.1238?journalCode=moor" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Mean-Field Controls with Q-learning for Cooperative MARL: Convergence and Complexity Analysis</h3>
+          <p class="paper-authors">with Xin Guo, Haotian Gu and Xiaoli Wei (2020)</p>
+          <p class="paper-meta">SIAM Journal on Mathematics of Data Science (2021) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2002.04131.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1360700" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>A General Framework for Learning Mean-Field Games</h3>
+          <p class="paper-authors">with Xin Guo, Anran Hu and Junzi Zhang (2020)</p>
+          <p class="paper-meta">Mathematics of Operations Research (2022) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2003.06069" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2022.1274" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Delay-Adaptive Learning in Generalized Linear Contextual Bandits</h3>
+          <p class="paper-authors">with Jose Blanchet and Zhengyuan Zhou (2020)</p>
+          <p class="paper-meta">Mathematics of Operations Research (2022) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2003.05174.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/moor.2023.1358?journalCode=moor" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Dynamic Programming Principles for Mean-Field Controls with Learning</h3>
+          <p class="paper-authors">with Xin Guo, Haotian Gu and Xiaoli Wei (2019)</p>
+          <p class="paper-meta">Operations Research (2022) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/1911.07314.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.2395" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Transaction Cost Data Analytics for Corporate Bonds</h3>
+          <p class="paper-authors">with Xin Guo and Charles-Albert Lehalle (2019)</p>
+          <p class="paper-meta">Quantitative Finance (2022) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/1903.09140.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://www.tandfonline.com/doi/pdf/10.1080/14697688.2022.2054723" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>A Class of Stochastic Games and Moving Free Boundary Problems</h3>
+          <p class="paper-authors">with Xin Guo and Wenpin Tang (2018)</p>
+          <p class="paper-meta">SIAM Journal on Control and Optimization (2022) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/1809.03459.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://epubs.siam.org/doi/10.1137/20M1322558" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+        <article class="paper">
+          <h3>Stochastic Games for Fuel Followers Problem: N versus MFG</h3>
+          <p class="paper-authors">with Xin Guo (2018)</p>
+          <p class="paper-meta">SIAM Journal on Control and Optimization (2019) <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/1803.02925.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://epubs.siam.org/doi/abs/10.1137/17M1159531" target="_blank" rel="noopener noreferrer">DOI</a></p>
+        </article>
+      </section>
+      <section class="content-section" id="conference-proceedings" aria-labelledby="conference-proceedings-heading">
+        <h2 id="conference-proceedings-heading">Conference proceedings</h2>
+        <article class="paper">
+          <h3>Sobolev Regularized Score Difference Estimation in Diffusion Models</h3>
+          <p class="paper-authors">with Jose Blanchet and Chenghan Xie (2026)</p>
+          <p class="paper-meta">ICML 2026 <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2608.18237" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/chenghands-on/Sobolev-Regularized-Score-Difference-Estimator" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </article>
+        <article class="paper">
+          <h3>Stochastic Control for Fine-tuning Diffusion Models: Optimality, Regularity, and Convergence</h3>
+          <p class="paper-authors">with Yinbin Han and Meisam Razaviyayn (2024)</p>
+          <p class="paper-meta">ICML 2025 <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2412.18164" target="_blank" rel="noopener noreferrer">arXiv</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://github.com/yinbinhan/fine-tuning-of-diffusion-models" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </article>
+        <article class="paper">
+          <h3>Neural Network-based Score Estimation in Diffusion Models: Optimization and Generalization</h3>
+          <p class="paper-authors">with Yinbin Han and Meisam Razaviyayn (2023)</p>
+          <p class="paper-meta">ICLR 2024 <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/abs/2401.15604" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+        <article class="paper">
+          <h3>Risk-Aware Linear Bandits with Application in Smart Order Routing</h3>
+          <p class="paper-authors">with Jingwei Ji and Ruihao Zhu (2022)</p>
+          <p class="paper-meta"><a class="confshort" href="https://ai-finance.org/icaif22/">ICAIF 2022</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://dl.acm.org/doi/abs/10.1145/3533271.3561692" target="_blank" rel="noopener noreferrer">Proceedings</a></p>
+        </article>
+        <article class="paper">
+          <h3>Scaling Properties of Deep Residual Networks</h3>
+          <p class="paper-authors">with Alain–Sam Cohen, Rama Cont, and Alain Rossier (2021)</p>
+          <p class="paper-meta"><a class="confshort" href="https://icml.cc/Conferences/2021">ICML 2021</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/2105.12245.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://proceedings.mlr.press/v139/cohen21b/cohen21b.pdf" target="_blank" rel="noopener noreferrer">Proceedings</a></p>
+        </article>
+        <article class="paper">
+          <h3>Learning in Generalized Linear Contextual Bandits with Stochastic Delays</h3>
+          <p class="paper-authors">with Jose Blanchet and Zhengyuan Zhou (2019)</p>
+          <p class="paper-meta"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS 2019 (Spotlight)</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/56cb94cb34617aeadff1e79b53f38354-Paper.pdf" target="_blank" rel="noopener noreferrer">Proceedings</a></p>
+        </article>
+        <article class="paper">
+          <h3>Learning Mean-Field Games</h3>
+          <p class="paper-authors">with Xin Guo, Anran Hu and Junzi Zhang (2019)</p>
+          <p class="paper-meta"><a class="confshort" href="https://nips.cc/Conferences/2019">NeurIPS 2019</a> <span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://arxiv.org/pdf/1901.09585.pdf" target="_blank" rel="noopener noreferrer">arXiv</a><span class="tagsep" aria-hidden="true">·</span> <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2019/file/030e65da2b1c944090548d36b244b28d-Paper.pdf" target="_blank" rel="noopener noreferrer">Proceedings</a></p>
+        </article>
+      </section>
+        <section class="content-section" id="students" aria-labelledby="students-heading">
+          <h2 id="students-heading">Ph.D. students</h2>
+          <p>I am very fortunate to advise and work with the following Ph.D. students:</p>
+          <ul class="people-list">
+            <li><a href="https://yinbinhan.github.io/">Yinbin Han, Stanford MS&amp;E</a> (2021–present), co-advised with <a href="https://sites.usc.edu/razaviyayn/">Meisam Razaviyayn</a></li>
+            <li><a href="https://drg-jingweiji.github.io/">Jingwei Ji, Stanford MS&amp;E</a> (2021–present)</li>
+            <li>Zhengqi Wu, USC (2021–present)</li>
+            <li><a href="https://leo-li.com/">Puheng Li, Stanford Statistics</a> (2025–present), co-advised with <a href="https://candes.su.domains/">Emmanuel Candès</a></li>
+            <li><a href="https://scholar.google.com/citations?user=-npEdYsAAAAJ&amp;hl=en">Chenghan Xie, Stanford MS&amp;E</a> (2025–present), co-advised with <a href="https://web.stanford.edu/~jblanche/">Jose Blanchet</a></li>
+          </ul>
+        </section>
+        <section class="content-section" id="awards" aria-labelledby="awards-heading">
+          <h2 id="awards-heading">Recognition &amp; awards</h2>
+          <ul class="award-list">
+            <li>Jagdeep and Roshni Singh Faculty Fellow, Stanford, 2025–present</li>
+            <li>J.P. Morgan AI Faculty Research Award, 2025</li>
+            <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2339240&amp;HistoricalAwards=false">NSF CAREER Award, Division of Mathematical Sciences</a>, 2024</li>
+            <li><a href="https://www.siam.org/prizes-recognition/activity-group-prizes/detail/siag-fme-early-career-prize">SIAM Activity Group on Financial Mathematics and Engineering Early Career Prize</a>, 2023</li>
+            <li><a href="https://www.jpmorgan.com/technology/artificial-intelligence/research-awards/faculty-research-awards-2022">J.P. Morgan AI Faculty Research Award</a>, 2022</li>
+            <li><a href="https://wise.usc.edu/programs/grants-and-awards/faculty/wise-gabilan-assistant-professorship/">WiSE Gabilan Assistant Professorship</a>, 2021–2024</li>
+            <li>Research Recognition Award, University of Oxford, 2020</li>
+            <li>Finalist, INFORMS Applied Probability Society Best Student Paper Competition, 2018</li>
+          </ul>
+        </section>
+        <section class="content-section" id="teaching" aria-labelledby="teaching-heading">
+          <h2 id="teaching-heading">Teaching</h2>
+          <div class="teaching-group">
+            <h3>Stanford University</h3>
+            <ul>
+              <li>MS&amp;E 245B: Advanced Investment Science, Winter 2026</li>
+              <li>MS&amp;E 242: Machine Learning for Algorithmic Trading, Spring 2026</li>
+              <li>MS&amp;E 342: Stochastic Systems and Learning Theory with Applications in Finance, Spring 2026</li>
+            </ul>
+          </div>
+          <div class="teaching-group">
+            <h3>New York University</h3>
+            <ul><li>FRE-GY 9073: Stochastic Systems and Modern Machine Learning Theory (Ph.D. level), Fall 2024</li></ul>
+          </div>
+          <div class="teaching-group">
+            <h3>University of Southern California</h3>
+            <ul>
+              <li>ISE 537: Financial Analytics (Machine Learning in Finance; master’s level), Fall 2021, 2022, and 2023</li>
+              <li>ISE 599: Special Topics in Control Theory and Reinforcement Learning (Ph.D. level), Fall 2022</li>
+            </ul>
+          </div>
+          <div class="teaching-group">
+            <h3>University of Oxford (Tutor)</h3>
+            <ul>
+              <li>Stochastic Control, Hilary Term 2020</li>
+              <li>Machine Learning, Hilary Term 2020</li>
+              <li>Market Microstructure and Algorithmic Trading, Hilary Term 2020</li>
+              <li>Statistics and Financial Data Analysis, Michaelmas Term 2019</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <div class="academic-path" aria-label="Academic appointments and education">
+        <div><img src="images/berkeley.png" alt="" loading="lazy"><div class="institution">Berkeley</div><div class="years">2014–2019</div></div>
+        <div><img src="images/oxford.png" alt="" loading="lazy"><div class="institution">Oxford</div><div class="years">2019–2021</div></div>
+        <div><img src="images/usc.png" alt="" loading="lazy"><div class="institution">USC</div><div class="years">2021–2024</div></div>
+        <div><img src="images/nyu.png" alt="" loading="lazy"><div class="institution">NYU</div><div class="years">2024–2025</div></div>
+        <div><img src="images/stanford.png" alt="" loading="lazy"><div class="institution">Stanford</div><div class="years">2025–present</div></div>
+      </div>
+      <footer class="page-footer"><span>Renyuan Xu · Stanford University</span><a href="#top">Back to top ↑</a></footer>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/style-2.js"></script>
-</body>
-  <style>
-  </style>
+  </body>
 </html>
